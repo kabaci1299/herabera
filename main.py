@@ -313,7 +313,7 @@ async def start(bot: Client, m: Message):
             if not is_authorized:
                 await m.reply_photo(
                     photo=photologo,
-                    caption="**Mʏ Nᴀᴍᴇ [DRM Wɪᴢᴀʀᴅ 🦋]()\n\nYᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ\nCᴏɴᴛᴀᴄᴛ [](https://t.me/) ғᴏʀ ᴀᴄᴄᴇꜱꜱ**",
+                    caption="**Mʏ Nᴀᴍᴇ [𝐒𝚞𝚋𝚛ɑ𝚝𝘰](https://t.me/aaajaeooooobot)\n\n Yᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴀᴄᴄᴇꜱꜱ ᴛᴏ ᴜꜱᴇ ᴛʜɪꜱ ʙᴏᴛ\nCᴏɴᴛᴀᴄᴛ [BOT](https://t.me/aaajaeooooobot) ғᴏʀ ᴀᴄᴄᴇꜱꜱ**",
                     reply_markup=InlineKeyboardMarkup([
     [
         InlineKeyboardButton("", url="")
@@ -342,7 +342,7 @@ async def start(bot: Client, m: Message):
                 caption=f"**Mʏ ᴄᴏᴍᴍᴀɴᴅꜱ ғᴏʀ ʏᴏᴜ [{m.from_user.first_name} ](tg://settings)**\n\n{commands_list}",
                 reply_markup=InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("⌯ FʀᴏɴᴛMᴀɴ | ×͜× |", url="https://t.me/")
+        InlineKeyboardButton(" 𝐒𝚞𝚋𝚛ɑ𝚝𝘰 ", url="https://t.me/aaajaeooooobot")
     ],
     [
         InlineKeyboardButton("ғᴇᴀᴛᴜʀᴇꜱ 🪔", callback_data="help"),
@@ -370,11 +370,11 @@ auth_filter = filters.create(auth_check_filter)
 @bot.on_message(~auth_filter & filters.private & filters.command)
 async def unauthorized_handler(client, message: Message):
     await message.reply(
-        "<b>Mʏ Nᴀᴍᴇ [DRM Wɪᴢᴀʀᴅ 🦋](https://t.me/)</b>\n\n"
+        "<b>Mʏ Nᴀᴍᴇ [ 𝐒𝚞𝚋𝚛ɑ𝚝𝘰 ](https://t.me/aaajaeooooobot)</b>\n\n"
         "<blockquote>You need to have an active subscription to use this bot.\n"
         "Please contact admin to get premium access.</blockquote>",
         reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton("💫 Get Premium Access", url="https://t.me/")
+            InlineKeyboardButton("💫 Get Premium Access", url="https://t.me/aaajaeooooobot")
         ]])
     )
 
@@ -687,10 +687,10 @@ async def txt_handler(bot: Client, m: Message):
 
     try:
         if raw_text == "1":
-            batch_message = await bot.send_message(chat_id=channel_id, text=f"<blockquote><b>🎯Target Batch : {b_name}</b></blockquote>")
+            batch_message = await bot.send_message(chat_id=channel_id, text=f"<blockquote><b>Target Batch : {b_name}</b></blockquote>")
             if "/d" not in raw_text7:
-                await bot.send_message(chat_id=m.chat.id, text=f"<blockquote><b><i>🎯Target Batch : {b_name}</i></b></blockquote>\n\n🔄 Your Task is under processing, please check your Set Channel📱. Once your task is complete, I will inform you 📩")
-                await bot.send_message(chat_id=m.chat.id, text=f"<blockquote><b><i>🎯Target Batch : {b_name}</i></b></blockquote>\n\n🔄 Your Task is under processing, please check your Set Channel📱. Once your task is complete, I will inform you 📩")
+                await bot.send_message(chat_id=m.chat.id, text=f"<blockquote><b><i>Target Batch : {b_name}</i></b></blockquote>\n\n🔄 Your Task is under processing, please check your Set Channel📱. Once your task is complete, I will inform you 📩")
+                await bot.send_message(chat_id=m.chat.id, text=f"<blockquote><b><i>Target Batch : {b_name}</i></b></blockquote>\n\n🔄 Your Task is under processing, please check your Set Channel📱. Once your task is complete, I will inform you 📩")
                 await bot.pin_chat_message(channel_id, batch_message.id)
                 message_id = batch_message.id + 1
                 await bot.delete_messages(channel_id, message_id)
@@ -839,27 +839,23 @@ async def txt_handler(bot: Client, m: Message):
 
             try:
                 cc = (
-    f"<b>——— ✦</b> {str(count).zfill(3)}✦ ———\n\n"
-    f"<b>🎞️ Tɪᴛʟᴇ :</b> {name1} \n"
-    f"<b>├── Extention : 𝐒нɑᎥ𝚝ɑη💖</b>\n"
-    f"<b>├── Resolution : [854x480]</b>\n\n"
-    f"<blockquote>📚  𝗕ᴀᴛᴄʜ : {b_name}</blockquote>"
-    f"\n\n<b>🌟 Extracted BY : {CR}</b>"
+    f"<b>Index:</b> {str(count).zfill(3)}\n\n"
+    f"<b>Tɪᴛʟᴇ:</b> `{name1}` \n\n"
+    f"<b>𝗕ᴀᴛᴄʜ: `{b_name}`</b>\n\n"
+    f"<b>Extracted BY: {CR}</b>"                
 )
                 cc1 = (
-    f"<b>——— ✦</b> {str(count).zfill(3)}✦ ———\n\n"
-    f"<b>📚  Tɪᴛʟᴇ :</b> {name1} \n"
-    f"<b>├── Extention : 𝐒нɑᎥ𝚝ɑη💖</b>\n\n"
-    f"<blockquote>📚  𝗕ᴀᴛᴄʜ : {b_name}</blockquote>"
-    f"\n\n<b>🌟 Extracted BY : {CR}</b>"
+    f"<b>Index:</b> {str(count).zfill(3)}\n\n"
+    f"<b>Tɪᴛʟᴇ:</b> `{name1}` \n\n"
+    f"<b>𝗕ᴀᴛᴄʜ: {b_name}</b>\n\n"
+    f"<b>Extracted BY : {CR}</b>"
 )
                 cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1} .zip`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n' 
                 ccimg = (
-    f"<b>——— ✦<b>: {str(count).zfill(3)}✦ ——— \n\n"
-    f"<b>🖼️  Tɪᴛʟᴇ</b> : {name1} \n"
-    f"<b>├── Extention : 𝐒нɑᎥ𝚝ɑη💖</b>\n\n"
-    f"<blockquote>📚  𝗕ᴀᴛᴄʜ : {b_name}</blockquote>"
-    f"\n\n<b>🌟 Extracted BY: {CR}</b>"
+    f"<b>Index:</b> {str(count).zfill(3)}\n\n"
+    f"<b>Tɪᴛʟᴇ:</b> `{name1}`\n\n"
+    f"<b>𝗕ᴀᴛᴄʜ: {b_name}</b>\n\n"
+    f"<b>Extracted BY: {CR}</b>"
 )
                 ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n**Audio Title :** `{name1} .mp3`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n'
                 cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{name1} .html`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n'
@@ -1027,21 +1023,9 @@ async def txt_handler(bot: Client, m: Message):
         await bot.send_message(
     channel_id,
     (
-        "<b>📬 ᴘʀᴏᴄᴇꜱꜱ ᴄᴏᴍᴘʟᴇᴛᴇᴅ</b>\n\n"
+        "<b>ᴘʀᴏᴄᴇꜱꜱ ᴄᴏᴍᴘʟᴇᴛᴇᴅ</b>\n\n"
         "<blockquote><b>📚 ʙᴀᴛᴄʜ ɴᴀᴍᴇ :</b> "
         f"{b_name}</blockquote>\n"
-        
-        "╭────────────────\n"
-        f"├ 🖇️ ᴛᴏᴛᴀʟ ᴜʀʟꜱ : <code>{len(links)}</code>\n"
-        f"├ ✅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟ : <code>{success_count}</code>\n"
-        f"├ ❌ ꜰᴀɪʟᴇᴅ : <code>{failed_count}</code>\n"
-        "╰────────────────\n\n"
-
-        "╭──────── 📦 ᴄᴀᴛᴇɢᴏʀʏ ────────\n"
-        f"├ 🎞️ ᴠɪᴅᴇᴏꜱ : <code>{video_count}</code>\n"
-        f"├ 📑 ᴘᴅꜰꜱ : <code>{pdf_count}</code>\n"
-        f"├ 🖼️ ɪᴍᴀɢᴇꜱ : <code>{img_count}</code>\n"
-        "╰────────────────────────────\n\n"
         
         "<i>ᴇxᴛʀᴀᴄᴛᴇᴅ ʙᴏᴛꜱ </i>"
     )
@@ -1222,8 +1206,8 @@ async def text_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'**🎞️ Title `{name} [{res}].mp4`\n\n🖇️LNK : <a href="{link}">Click Here</a>\n\n🎓 Uploaded By» {CREDIT}**'
-                cc1 = f'**📑 Title» `{name}`\n\n🖇️ LNK : <a href="{link}">Click Here</a>\n\n🎓 Uploaded By {CREDIT}**'
+                cc = f'**Title `{name} [{res}].mp4`\n\nLNK : <a href="{link}">Click Here</a>\n\n Uploaded By» {CREDIT}**'
+                cc1 = f'**Title» `{name}`\n\n LNK : <a href="{link}">Click Here</a>\n\n Uploaded By {CREDIT}**'
                   
                 if "drive" in url:
                     try:
@@ -1340,9 +1324,9 @@ async def text_handler(bot: Client, m: Message):
                     pass
 
                 else:
-                    Show = f"**🚀Dᴏᴡɴʟᴏᴀᴅɪɴɢ Sᴛᴀʀᴛᴇᴅ **\n" \
-                           f"🔗 𝐋𝐢𝐧𝐤 » {url}\n" \
-                           f"✦ Uploader {CREDIT}"
+                    Show = f"**Dᴏᴡɴʟᴏᴀᴅɪɴɢ Sᴛᴀʀᴛᴇᴅ **\n" \
+                           f" 𝐋𝐢𝐧𝐤 » {url}\n" \
+                           f" Uploader {CREDIT}"
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -1361,7 +1345,7 @@ def notify_owner():
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
     data = {
         "chat_id": OWNER_ID,
-        "text": "Bᴏᴛ Iꜱ Lɪᴠᴇ Nᴏᴡ 🤖"
+        "text": "𝐁𝐨𝐭 𝐑𝐞𝐬𝐭𝐚𝐫𝐭𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 ✅"
     }
     requests.post(url, data=data)
 
