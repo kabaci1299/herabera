@@ -842,20 +842,20 @@ async def txt_handler(bot: Client, m: Message):
     f"<b>Index:</b> {str(count).zfill(3)}\n\n"
     f"<b>Tɪᴛʟᴇ:</b> `{name1}` \n\n"
     f"<b>𝗕ᴀᴛᴄʜ: `{b_name}`</b>\n\n"
-    f"<b>Extracted BY: {CR}</b>"                
+    f"<b>Extracted Bʏ: {CR}</b>"                
 )
                 cc1 = (
     f"<b>Index:</b> {str(count).zfill(3)}\n\n"
     f"<b>Tɪᴛʟᴇ:</b> `{name1}` \n\n"
     f"<b>𝗕ᴀᴛᴄʜ: {b_name}</b>\n\n"
-    f"<b>Extracted BY : {CR}</b>"
+    f"<b>Extracted Bʏ : {CR}</b>"
 )
                 cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1} .zip`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n' 
                 ccimg = (
     f"<b>Index:</b> {str(count).zfill(3)}\n\n"
     f"<b>Tɪᴛʟᴇ:</b> `{name1}`\n\n"
     f"<b>𝗕ᴀᴛᴄʜ: {b_name}</b>\n\n"
-    f"<b>Extracted BY: {CR}</b>"
+    f"<b>Extracted Bʏ: {CR}</b>"
 )
                 ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n**Audio Title :** `{name1} .mp3`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n'
                 cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{name1} .html`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by: **{CR}\n'
