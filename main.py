@@ -178,26 +178,26 @@ cookies_file_path = os.getenv("cookies_file_path", "youtube_cookies.txt")
 api_url = "https://megatron-x1-api.vercel.app/"
 api_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzkxOTMzNDE5NSIsInRnX3VzZXJuYW1lIjoi4p61IFtvZmZsaW5lXSIsImlhdCI6MTczODY5MjA3N30.SXzZ1MZcvMp5sGESj0hBKSghhxJ3k1GTWoBUbivUe1I"
 cwtoken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NjM5NTY2NDgsImNvbiI6eyJpc0FkbWluIjpmYWxzZSwiYXVzZXIiOiIiLCJpZCI6ImRVVlBTbmRTV0VJNE9HTklUamc1TmxsQ2MwdEtkejA5IiwiZmlyc3RfbmFtZSI6Ik9WZGhhbGxXTVROTFNrWk5jVzFXWldScFdXcFZRVDA5IiwiZW1haWwiOiJZVlkxVWtFdlYzbFNTVkY2V2pJNWIxZ3pjVWhGVVVScVZFVkZZblpSTHk5V1ZsWjFObEJYUTB0cWN6MD0iLCJwaG9uZSI6IlVVUm9NbVo0SzB4R09Xb3ZSMFJWVlZORU4wUXJaejA5IiwiYXZhdGFyIjoiIiwicmVmZXJyYWxfY29kZSI6IkwyOXpiamt6V1Zwc1QzQnlWeXRuZG1oMk5HZFdRVDA5IiwiZGV2aWNlX3R5cGUiOiJhbmRyb2lkIiwiZGV2aWNlX3ZlcnNpb24iOiJRKEFuZHJvaWQgMTAuMCkiLCJkZXZpY2VfbW9kZWwiOiJYaWFvbWkgTTIwMDdKMjBDSSIsInJlbW90ZV9hZGRyIjoiMy4yMzguMTg1LjI1MSwgMy4yMzguMTg1LjI1MSwzLjIzOC4xODUuMjUxLCAzLjIzOC4xODUuMjUifX0.aPM7S28YG5OhpP7HEZW7-OrG3ZpJmRQvONiZ4GZKakdcWlYH2hWQ3tguNLXWfGpD33ZnOvLhOcq1pK0txVvDYf1F1l6sZDSrsGjIQauQusscSTQzV-ECPWvH4q0Dk2X9k0AK-iFSJREg8jB1KJlEwYOIMECr-vdLEgdoM1gTIDzzSTBBUjb6EvXJrxxqFdYLCKaXAe4KreDr9WmToZHXoz_T6cY5kIdqWCTHEjdd8ptIDvy8zewVjhZ73JAsr64HP-PUPK4bcpjyHHK-IbuBB6JHT5heNX42HAdBzfcCkTsL4VButo3PYtzW1ZX71wiEHvlSOfA7MmtZR65U_wgWjQ"
-photologo = 'https://envs.sh/Nf.jpg/IMG20250803704.jpg' #https://envs.sh/fH.jpg/IMG20250803719.jpg
+photologo = 'https://imagefa.st/images/2025/12/04/1566146514651.jpg' #https://envs.sh/fH.jpg/IMG20250803719.jpg
 photoyt = 'https://tinypic.host/images/2025/03/18/YouTube-Logo.wine.png' #https://envs.sh/fH.jpg/IMG20250803719.jpg
 photocp = 'https://tinypic.host/images/2025/03/28/IMG_20250328_133126.jpg'
 photozip = 'https://envs.sh/fH.jpg/IMG20250803719.jpg'
 
 
 # Inline keyboard for start command
-BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/")]])
+BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/aaajaeooooobot")]])
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/")        ],
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/aaajaeooooobot")        ],
     ]
 )
 
 # Image URLs for the random image feature
 image_urls = [
-    "https://envs.sh/Nf.jpg/IMG20250803704.jpg",
-    "https://envs.sh/Nf.jpg/IMG20250803704.jpg",
-    "https://envs.sh/Nf.jpg/IMG20250803704.jpg",
+    "https://imagefa.st/images/2025/12/04/1566146514651.jpg",
+    "https://imagefa.st/images/2025/12/04/1566146514651.jpg",
+    "https://imagefa.st/images/2025/12/04/1566146514651.jpg",
     # Add more image URLs as needed
 ]
 
