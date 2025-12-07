@@ -1,5 +1,5 @@
 # Use a slim Python 3.12 base image (Debian-based for better compatibility)
-FROM python:3.12-slim-bookworm
+FROM python:3.13.0
 
 # Set the working directory
 WORKDIR /app
@@ -61,6 +61,7 @@ CMD gunicorn --bind 0.0.0.0:${PORT:-8000} \
     app:app & \
     aria2c --enable-rpc --rpc-listen-all --daemon=true && \
     python3 main.py
+
 
 
 
