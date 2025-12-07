@@ -5,7 +5,7 @@ FROM python:3.13.0
 WORKDIR /app
 
 # Install system dependencies first (optimized for download/upload performance)
-RUN apt-get update && apt-get install -y --no-install-recommends \
+#RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
     g++ \
     cmake \
@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Bento4 (manually install just mp4decrypt)
-RUN wget -q https://github.com/axiomatic-systems/Bento4/archive/refs/tags/v1.6.0-639.zip \
+#RUN wget -q https://github.com/axiomatic-systems/Bento4/archive/refs/tags/v1.6.0-639.zip \
     && unzip v1.6.0-639.zip \
     && cd Bento4-1.6.0-639 \
     && mkdir cmakebuild \
@@ -42,7 +42,7 @@ RUN pip install --no-cache-dir --upgrade pip \
 COPY . .
 
 # Optimize aria2 configuration for Render's network
-RUN mkdir -p /etc/aria2 \
+#RUN mkdir -p /etc/aria2 \
     && echo "disable-ipv6=true\n" \
          "file-allocation=falloc\n" \
          "optimize-concurrent-downloads=true\n" \
@@ -61,6 +61,7 @@ CMD gunicorn --bind 0.0.0.0:${PORT:-8000} \
     app:app & \
     aria2c --enable-rpc --rpc-listen-all --daemon=true && \
     python3 main.py
+
 
 
 
